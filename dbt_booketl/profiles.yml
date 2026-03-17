@@ -1,0 +1,13 @@
+booketl:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: CDIBBYW-GH02163
+      user: ALIIGAD
+      password: "{{ env_var('SNOWFLAKE_PASSWORD') }}"
+      role: ACCOUNTADMIN
+      database: BOOKETL_DB
+      warehouse: BOOKETL_WH
+      schema: ANALYTICS
+      threads: 1

@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: mart_books_summary
+    columns:
+      - name: category
+        tests: [not_null, unique]
+      - name: total_books
+        tests: [not_null]
+      - name: avg_price
+        tests: [not_null]

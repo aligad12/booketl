@@ -1,0 +1,26 @@
+# Environment & credentials — never commit these
+.env
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# dbt build artifacts
+dbt_booketl/target/
+dbt_booketl/dbt_packages/
+dbt_booketl/logs/
+dbt_booketl/package-lock.yml
+
+# pytest cache
+.pytest_cache/
+
+# OS files
+.DS_Store
+Thumbs.db

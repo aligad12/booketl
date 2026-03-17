@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: stg_books
+    columns:
+      - name: title
+        tests: [not_null]
+      - name: price
+        tests: [not_null]
+      - name: rating
+        tests:
+          - not_null
+          - accepted_values:
+              values: [1, 2, 3, 4, 5]
+      - name: category
+        tests: [not_null]
