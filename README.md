@@ -61,6 +61,25 @@ Snowflake ANALYTICS Schema
   │ ...             │ ...         │ ...       │ ...       │ ...        │
   └─────────────────┴─────────────┴───────────┴───────────┴────────────┘
 ```
+---
+
+## 📸 Pipeline in Action
+
+### Step 1 — Scraping 50 categories live
+![Scraping](assets/pipeline_scraping.png)
+
+### Step 2 — 1000 rows loaded into Snowflake
+![Pipeline Complete](assets/pipeline_complete.png)
+
+### Step 3 — dbt transforms raw data into analytics
+![dbt Run](assets/dbt_run.png)
+
+### Step 4 — All 9 dbt tests passing
+![dbt Tests](assets/dbt_test.png)
+
+### Step 5 — Final analytics table in Snowflake
+![Snowflake Output](assets/snowflake_output.png)
+
 
 ---
 
